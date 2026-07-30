@@ -33,7 +33,20 @@ Paid CAC is attributed by matching the user's `join_date` and normalized acquisi
 ## Tools used
 
 - **PostgreSQL:** Relational modeling, transformations, window functions, views, and validation.
+
+**Why PostgreSQL?**
+- Robust relational database with strong SQL standards compliance.
+- Excellent support for analytical SQL features such as window functions, CTEs, views, and aggregate functions.
+- Well-suited for implementing layered data warehouse architectures (Bronze, Silver, Gold).
+- Closely reflects the production environments commonly used in modern data engineering and my regular work.
+
 - **pgAdmin 4:** Database administration, SQL execution, and CSV imports.
+
+**Why pgAdmin 4?**
+- Provides an intuitive interface for database administration, SQL development, and CSV data imports.
+- Simplifies schema management, query execution, and validation during development.
+- Makes the solution easy to reproduce for reviewers using PostgreSQL.
+  
 - **ChatGPT:** Used as a review assistant to challenge modeling choices, improve validation coverage, and refine documentation. All SQL logic and outputs were tested in PostgreSQL before inclusion.
 
 Representative AI prompts:
