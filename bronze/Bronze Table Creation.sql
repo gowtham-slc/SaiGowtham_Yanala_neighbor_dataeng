@@ -5,6 +5,9 @@
    - Apply only basic PostgreSQL-compatible data types
    - No renaming, deduplication, or business transformations
    ============================================================ */
+CREATE SCHEMA IF NOT EXISTS bronze;
+CREATE SCHEMA IF NOT EXISTS silver;
+CREATE SCHEMA IF NOT EXISTS gold;
 
 DROP TABLE IF EXISTS bronze.users_daily_snapshot;
 DROP TABLE IF EXISTS bronze.listings_daily_snapshot;
